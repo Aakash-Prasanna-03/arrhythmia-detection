@@ -90,6 +90,11 @@ data/
 models/
 lead_based_models/
 
+# Additional model and data folders
+lead_based_models1/
+leadtrain/
+z/
+
 # Ignore EDA outputs
 eda/*.csv
 eda/*.xlsx
@@ -97,9 +102,33 @@ eda/*.png
 eda/*.jpg
 eda/*.pdf
 
+# Ignore numpy arrays
+*.npy
+
+# Ignore .txt files in data folders
+data/**/*.txt
+
+# Ignore .mat and .hea files in data folders
+data/**/*.mat
+data/**/*.hea
+
+# Ignore markdown and html in data folders
+data/**/*.md
+data/**/*.html
+
+# Ignore RECORDS, LICENSE.txt, SHA256SUMS.txt, index.html in data folders
+data/**/RECORDS
+data/**/LICENSE.txt
+data/**/SHA256SUMS.txt
+data/**/index.html
+
 # System files
 .DS_Store
 Thumbs.db
+
+# Python cache
+__pycache__/
+models/__pycache__/
 
 # Windows
 *.bak
